@@ -33,11 +33,25 @@ ul {
 .img-banner {
    width:100% 
      
-} 
+}
+.img-dulcet {
+    width:100% 
+      
+ }  
 .schedule td{
     padding-bottom: 5px;
+    padding-right: 3px;
 }
 .schedule h4{
     padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*.schedule tr{
+    :nth-child(even) {background:silver;}
+}*/
+
+h4 {
+    padding-top: 10px;
     padding-bottom: 5px;
+
 }
