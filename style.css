@@ -17,18 +17,27 @@ ul {
     width: 100%;
     
 }
-
+.wrapper p:first-of-type {
+    text-indent: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
 .wrapper p{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     text-indent: 2ch;
     font-size: 16px;
 }
 
+.members {
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .tagline {
-    width: 100%;
     /* padding-top: 15px; */
     padding-bottom: 15px; 
-    
+    text-align: center;
 }
 
 .img-banner-small {
@@ -46,10 +55,38 @@ ul {
     width:50%;
     margin-left: auto;
     margin-right: auto;
-    
-    
  }  
-.schedule td{
+ /* audio {
+    width: 300px;
+ } */
+
+ .songtitle {
+    padding-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    font-family:'Courier New', Courier, monospace;
+    padding-bottom: 5px;
+ }
+
+ .phone_player {
+    display: block;
+ }
+ .ipad_player {
+    display: none;
+ }
+ .listing h4{
+    font-size:24px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+ }
+.schedule {
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .schedule td{
     padding-bottom: 5px;
     padding-right: 3px;
 }
@@ -64,8 +101,8 @@ ul {
 h4 {
     padding-top: 10px;
     padding-bottom: 5px;
-
 }
+/* Tablet Sized: */
 
 @media only screen and (min-width: 768px) {
     .img-banner-small {
@@ -76,14 +113,50 @@ h4 {
         display: block;
         
      }
-     img-dulcet {
+    .img-dulcet {
         width: 400px;
           
      } 
      .wrapper p{
         padding-bottom: 5px;
-        text-indent: 2ch;
         font-size: 24px;
     } 
-     
+    .members {
+        text-align:center;
+        font-size: 24px;
+    }
+    
+    .tagline {
+        padding-top: 5px; 
+        padding-bottom: 15px; 
+        font-size: 24px; 
+    }
+    .phone_player {
+        display: none;
+     }
+     .ipad_player {
+        display: block;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+     } 
+     .ipad_player td{
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+     .ipad_player audio{
+        width: 400px;
+     }
+     .songtitle {
+        padding-top: 3px;
+        text-align: center;
+        font-size: 18px;
+        font-family:'Courier New', Courier, monospace;
+        padding-bottom: 5px;
+     }
+    
+    .schedule tr {
+        font-size: 24px;
+    }
 }
